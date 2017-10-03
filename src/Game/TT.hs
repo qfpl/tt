@@ -23,7 +23,7 @@ data Player a =
   }
   deriving (Eq, Ord, Show)
 
-data Score =
+newtype Score =
   Score {
     _value ::
       Integer
@@ -57,6 +57,7 @@ newtype Results =
 
 makeClassy ''Player
 makeClassy ''Score
+makeWrapped ''Score
 makeClassy ''Challenge
 makeClassy ''Result
 makeClassy ''Results
