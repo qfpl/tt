@@ -10,7 +10,7 @@ module Game.TT where
 import Control.Lens
 import Data.Time
 
-data Player a =
+data Player =
   Player {
     _name :: 
       String
@@ -18,16 +18,13 @@ data Player a =
       String
   , _email ::
       String
-  , _playerValue ::
-      a
   }
   deriving (Eq, Ord, Show)
 
-newtype Score =
-  Score {
-    _value ::
-      Integer
-  }
+data Score =
+  GameScore [(Integer, Integer)]
+  | Forfeit1
+  | Forfeit2
   deriving (Eq, Ord, Show)
   
 data Challenge a =
@@ -35,9 +32,11 @@ data Challenge a =
     _time ::
       UTCTime
   , _challengeFrom ::
-      Player a
+      Player
   , _challengeTo ::
-      Player a
+      Player
+  , _challengeScore :: 
+      a
   }
   deriving (Eq, Ord, Show)
 
@@ -50,16 +49,24 @@ data Result =
   }
   deriving (Eq, Ord, Show)
 
-newtype Results =
-  Results 
-    [Result]
+newtype LadderEntry =
+  LadderEntry 
+    (Either (Challenge ()) Result)
+  deriving (Eq, Ord, Show)
+
+data Ladder =
+  Ladder {
+    _laddername ::
+      String
+  , _ladderentries ::
+      [LadderEntry]
+  }
   deriving (Eq, Ord, Show)
 
 makeClassy ''Player
 makeClassy ''Score
-makeWrapped ''Score
 makeClassy ''Challenge
 makeClassy ''Result
-makeClassy ''Results
-makeWrapped ''Results
+makeClassy ''LadderEntry
+makeWrapped ''LadderEntry
 
