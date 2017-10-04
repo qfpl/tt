@@ -18,6 +18,8 @@ data Player =
       String
   , _email ::
       String
+  , _avatar ::
+      String
   }
   deriving (Eq, Ord, Show)
 
