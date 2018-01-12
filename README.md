@@ -8,4 +8,4 @@ The serve is determine by an initial rally. The winner of the rally decides who 
 
 ### Example scoring
 
-Suppose P1 beats P2 score 21-18. The handicap is 3. Next game starts at 0-3 and plays to 24. Suppose P1 beats P2 score 24-22. The handicap is the old handicap (3) pls the new handicap (2) = 5. The next game starts at 0-5, play to 26 to win (21+5). Suppose P1 then loses 25-26. The new handicap becomes the old handicap (5)-1=4. And so on.
+Suppose P1 beats P2 score 21-18. The handicap is 3. Next game starts at 0-3 and plays to 24. Suppose P1 beats P2 score 24-22. The handicap is the old handicap (3) plus the new handicap (2) = 5. The next game starts at 0-5, play to 26 to win (21+5). Suppose P1 then loses 25-26. The new handicap becomes the old handicap (5)-1=4. And so on.
