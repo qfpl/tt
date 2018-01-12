@@ -4,7 +4,7 @@ Two players play to 21. There is no tie break. Whatever the difference in the fi
 
 ### Serve
 
-The serve is determine by an initial rally. The winner of the rally decides who starts the serve. The handout occurs when the sum of the current score is a multiple of 5. For example, the handicap may be 0-4. Whoever starts the serve has only one serve before handing out serve to their opponent, who then has 5 serves.
+The serve is determine by an initial rally. The winner of the rally decides who starts the serve. The handout occurs when the sum of the current score is a multiple of 5. For example, the handicap may be 0-4 at the start of the game, first to 25 wins. Whoever starts the serve has only one serve before handing out serve to their opponent, who then has 5 serves. By winning the initial rally for serve, a player can decide which of the two players must start with the serve.
 
 ### Example scoring
 
